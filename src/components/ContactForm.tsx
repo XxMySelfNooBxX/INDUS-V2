@@ -52,7 +52,7 @@ export default function ContactForm() {
                 const result = await submitContactForm(payload);
                 if (result.success) {
                     setStatus('success');
-                    setMessage(result.message);
+                    setMessage(result.message || 'Successfully sent.');
                     setFormData({ name: '', email: '', address: '', countryCode: '+1', phone: '', query: '' });
                 } else {
                     setStatus('error');
