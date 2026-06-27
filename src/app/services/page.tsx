@@ -32,7 +32,7 @@ export default function ServicesPage() {
     <main className="pt-32 pb-20 min-h-screen animate-[fadeInUp_0.8s_ease-out_both]">
       {/* Hero Header */}
       <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32 md:mb-48">
-        <p className="font-mono text-[11px] tracking-[0.4em] text-champagne uppercase mb-6">Our Capabilities</p>
+        <p className="font-mono text-[15px] font-semibold tracking-[0.4em] text-champagne uppercase mb-6">Our Capabilities</p>
         <div className="grid lg:grid-cols-12 gap-12 items-end">
           <div className="lg:col-span-8">
             <h1 className="font-serif text-[clamp(3rem,6vw,5.5rem)] font-medium leading-[1.05]">
@@ -40,7 +40,7 @@ export default function ServicesPage() {
             </h1>
           </div>
           <div className="lg:col-span-4 pb-4">
-            <p className="font-sans text-alabaster/60 text-lg leading-relaxed border-l border-champagne/40 pl-6">
+            <p className="font-sans text-alabaster/90 text-[22px] leading-relaxed border-l border-champagne/60 pl-6">
               Combining engineering precision with business technology to execute massive turnkey projects across India and South East Asia.
             </p>
           </div>
@@ -58,11 +58,11 @@ export default function ServicesPage() {
                   
                   {/* Text Content */}
                   <div className={`md:col-span-5 flex flex-col justify-center z-20 ${isEven ? 'md:order-1' : 'md:order-2'}`}>
-                    <span className="font-mono text-sm tracking-[0.3em] text-champagne mb-8">0{i+1}</span>
+
                     <h3 className="font-serif text-[clamp(2.5rem,4vw,4rem)] leading-[1.05] mb-8 group-hover:text-champagne transition-colors duration-500">
                       {s.title}
                     </h3>
-                    <p className="font-sans text-xl text-alabaster/60 leading-relaxed font-light">
+                    <p className="font-sans text-xl text-white leading-relaxed">
                       {s.desc}
                     </p>
                   </div>
@@ -90,10 +90,10 @@ export default function ServicesPage() {
       {/* Scale & CTA */}
       <section className="py-32 px-6 md:px-12 max-w-7xl mx-auto text-center border-t border-alabaster/10">
         <h2 className="font-serif text-[clamp(2rem,4vw,3.5rem)] mb-8">Ready to Build the Future?</h2>
-        <p className="font-sans text-alabaster/60 max-w-2xl mx-auto text-lg leading-relaxed mb-12">
+        <p className="font-sans text-white max-w-3xl mx-auto text-xl leading-relaxed mb-12">
           From complex government irrigation networks to private highway construction, we bring unmatched scale, technology, and permanence to every project we touch.
         </p>
-        <Link href="/contact" className="inline-block border border-champagne/40 px-12 py-5 text-[11px] tracking-[0.3em] uppercase hover:bg-champagne hover:text-obsidian transition-all duration-500">
+        <Link href="/contact" className="inline-block border border-champagne/60 px-12 py-5 text-[13px] font-semibold tracking-[0.3em] uppercase hover:bg-champagne hover:text-obsidian transition-all duration-500 text-champagne">
           Initiate a Project
         </Link>
       </section>

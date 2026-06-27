@@ -17,8 +17,8 @@ export default function HeroCanvas() {
       x: number; y: number; size: number; speed: number; opacity: number; drift: number;
       constructor() {
         this.x = Math.random() * canvas!.width; this.y = Math.random() * canvas!.height;
-        this.size = Math.random() * 1.5 + 0.3; this.speed = Math.random() * 0.3 + 0.1;
-        this.opacity = Math.random() * 0.5 + 0.1; this.drift = (Math.random() - 0.5) * 0.3;
+        this.size = Math.random() * 2 + 0.5; this.speed = Math.random() * 0.4 + 0.1;
+        this.opacity = Math.random() * 0.7 + 0.3; this.drift = (Math.random() - 0.5) * 0.4;
       }
       update() {
         this.y -= this.speed; this.x += this.drift;
@@ -30,7 +30,7 @@ export default function HeroCanvas() {
         ctx!.shadowBlur = 8; ctx!.shadowColor = "rgba(212, 175, 55, 0.6)"; ctx!.fill();
       }
     }
-    for (let i = 0; i < 60; i++) particles.push(new Particle());
+    for (let i = 0; i < 200; i++) particles.push(new Particle());
     const animate = () => {
       ctx!.clearRect(0, 0, canvas!.width, canvas!.height);
       particles.forEach(p => { p.update(); p.draw(); });

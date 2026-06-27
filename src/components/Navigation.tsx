@@ -29,7 +29,7 @@ export default function Navigation() {
         scrolled ? "py-4 bg-obsidian/95 backdrop-blur-md border-b border-alabaster/10" : "py-8 md:py-10 bg-transparent"
       }`}
     >
-      <Link href="/" className="font-serif text-lg tracking-[0.3em] text-white hover:opacity-80 transition-opacity">
+      <Link href="/" className="font-serif text-xl tracking-[0.3em] text-white hover:opacity-80 transition-opacity">
         INDUS INC
       </Link>
       <ul className="hidden md:flex gap-10 list-none">
@@ -37,8 +37,8 @@ export default function Navigation() {
           <li key={link.href}>
             <Link 
               href={link.href} 
-              className={`text-white text-[11px] tracking-[0.25em] uppercase transition-all duration-300 ${
-                pathname === link.href ? "opacity-100 border-b border-champagne pb-1 text-champagne" : "opacity-60 hover:opacity-100"
+              className={`text-white text-[13px] font-semibold tracking-[0.25em] uppercase transition-all duration-300 ${
+                pathname === link.href ? "opacity-100 border-b border-champagne pb-1 text-champagne" : "opacity-100 hover:text-champagne"
               }`}
             >
               {link.label}

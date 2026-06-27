@@ -12,21 +12,21 @@ export default function AboutPage() {
   return (
     <main className="pt-32 pb-20 px-6 md:px-12 min-h-screen animate-[fadeInUp_0.8s_ease-out_both]">
       <div className="max-w-5xl mx-auto">
-        <p className="font-mono text-[11px] tracking-[0.4em] text-champagne uppercase mb-6">Our Legacy</p>
+        <p className="font-mono text-[16px] font-semibold tracking-[0.3em] text-champagne uppercase mb-6">Our Legacy</p>
         <h1 className="font-serif text-[clamp(2.5rem,6vw,5rem)] font-medium leading-[1.05] mb-12">
           Business Technologists <br/>in the <span className="text-champagne italic">Agricultural Realm.</span>
         </h1>
         
         <div className="grid md:grid-cols-2 gap-16 mb-20">
           <div>
-            <h2 className="font-serif text-2xl mb-4 text-champagne">Our Vision</h2>
-            <p className="font-sans text-lg text-alabaster/70 leading-relaxed">
+            <h2 className="font-serif text-[32px] mb-4 text-champagne">Our Vision</h2>
+            <p className="font-sans text-[20px] text-alabaster/90 leading-relaxed">
               We envision a future where every client can thrive in a competitive landscape, guided by our core values of integrity, excellence, and collaboration. INDUS INC believes that combining people, technology and process is the way forward.
             </p>
           </div>
           <div>
-            <h2 className="font-serif text-2xl mb-4 text-champagne">Our Mission</h2>
-            <p className="font-sans text-lg text-alabaster/70 leading-relaxed">
+            <h2 className="font-serif text-[32px] mb-4 text-champagne">Our Mission</h2>
+            <p className="font-sans text-[20px] text-alabaster/90 leading-relaxed">
               To strengthen India's development through innovative, sustainable, and high-quality Products and services to domestic and foreign customers with 100% satisfactory solutions. We are dedicated to delivering projects that empower communities, ensure safety, and promote environmental stewardship.
             </p>
           </div>
@@ -40,15 +40,15 @@ export default function AboutPage() {
         </div>
 
         <div className="border-t border-alabaster/10 pt-20">
-          <h2 className="font-serif text-3xl mb-16 text-center">The Four Pillars</h2>
+          <h2 className="font-serif text-5xl mb-16 text-center">The Four Pillars</h2>
           <div className="grid md:grid-cols-2 gap-12">
             {pillars.map((p, i) => (
-              <div key={i} className="p-8 border border-champagne/10 hover:border-champagne/40 transition-all duration-500 group bg-obsidian-2/30">
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="font-mono text-xs text-champagne">0{i+1}</span>
-                  <h3 className="font-serif text-2xl group-hover:text-champagne transition-colors">{p.title}</h3>
+              <div key={i} className="p-8 border border-champagne/10 hover:border-champagne/40 transition-all duration-500 group bg-obsidian-2/30 text-center">
+                <div className="mb-4 flex items-center justify-center gap-4">
+                  <div className="w-2 h-2 rounded-full bg-champagne"></div>
+                  <h3 className="font-serif text-3xl text-champagne transition-colors">{p.title}</h3>
                 </div>
-                <p className="font-sans text-alabaster/60 leading-relaxed">{p.desc}</p>
+                <p className="font-sans text-lg text-alabaster/90 leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
