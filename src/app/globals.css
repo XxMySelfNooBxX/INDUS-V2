@@ -66,3 +66,8 @@ body::after {
     filter: blur(0);
   }
 }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+

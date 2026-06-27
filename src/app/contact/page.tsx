@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import InquiryModal from "@/components/InquiryModal";
+
 export const metadata: Metadata = { title: "Contact | Indus INC" };
 
 export default function ContactPage() {
@@ -10,7 +12,7 @@ export default function ContactPage() {
           The Export <span className="text-champagne italic">Desk.</span>
         </h1>
 
-        <div className="grid md:grid-cols-2 gap-16 mb-32">
+        <div className="grid md:grid-cols-2 gap-16 mb-20">
           <div className="p-10 border border-champagne/15 bg-obsidian-2/50 backdrop-blur-sm flex flex-col justify-between">
             <div>
               <p className="font-mono text-[15px] font-semibold tracking-[0.3em] text-champagne uppercase mb-6">Main Office / Adat</p>
@@ -22,9 +24,7 @@ export default function ContactPage() {
               </p>
             </div>
             <div>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7-XBm1-K8nFTW7_yvmXnV0Zv_q4SDo_sYvBBvH2PJgSJceg/viewform?usp=dialog" target="_blank" rel="noreferrer" className="inline-block border border-champagne/60 px-8 py-4 text-[13px] font-semibold tracking-[0.3em] uppercase hover:bg-champagne hover:text-obsidian transition-all duration-500 text-champagne">
-                Submit Inquiry Form
-              </a>
+              <InquiryModal />
             </div>
           </div>
           <div className="p-10 border border-champagne/15 bg-obsidian-2/50 backdrop-blur-sm">
@@ -38,7 +38,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="text-center py-20 border-t border-alabaster/10">
+        <div className="text-center py-20 border-t border-alabaster/10 mt-20">
           <h2 className="font-serif text-[clamp(2rem,6vw,5rem)] font-medium leading-[0.9] mb-12">
             Let's <span className="text-champagne italic">Connect.</span>
           </h2>
