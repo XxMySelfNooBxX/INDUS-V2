@@ -26,7 +26,7 @@ export function EquipmentGallery({ id, title }: EquipmentGalleryProps) {
             src={img} 
             alt={`${title} Image ${idx + 1}`} 
             fill 
-            className={`object-cover transition-all duration-700 ease-in-out group-hover:scale-105 ${
+            className={`object-contain transition-all duration-700 ease-in-out group-hover:scale-105 ${
               mainImage === img ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`} 
           />
