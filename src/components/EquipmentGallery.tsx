@@ -20,12 +20,17 @@ export function EquipmentGallery({ id, title }: EquipmentGalleryProps) {
     <div className="space-y-4">
       {/* Main Image */}
       <div className="aspect-[4/3] bg-obsidian-2/50 border border-alabaster/10 flex items-center justify-center rounded-sm relative overflow-hidden group">
-        <Image 
-          src={mainImage} 
-          alt={`${title} Main`} 
-          fill 
-          className="object-cover transition-transform duration-700 group-hover:scale-105" 
-        />
+        {images.map((img, idx) => (
+          <Image 
+            key={idx}
+            src={img} 
+            alt={`${title} Image ${idx + 1}`} 
+            fill 
+            className={`object-cover transition-all duration-700 ease-in-out group-hover:scale-105 ${
+              mainImage === img ? 'opacity-100 z-10' : 'opacity-0 z-0'
+            }`} 
+          />
+        ))}
       </div>
 
       {/* Thumbnails */}
