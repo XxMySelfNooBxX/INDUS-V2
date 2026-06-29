@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function EquipmentPage() {
   return (
@@ -32,12 +33,12 @@ export default function EquipmentPage() {
 
           <div className="space-y-8 md:space-y-16">
             {/* Tractor Trailers */}
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-obsidian-2/50 border border-alabaster/5 p-6 md:p-8">
-              <div className="aspect-[4/3] bg-obsidian border border-alabaster/10 flex items-center justify-center w-full">
-                <span className="text-alabaster/30 font-mono tracking-widest uppercase">Placeholder Image</span>
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-obsidian-2/50 border border-alabaster/5 p-6 md:p-8 group/card transition-colors hover:border-champagne/30">
+              <div className="aspect-video bg-obsidian border border-alabaster/10 flex items-center justify-center w-full relative overflow-hidden group">
+                <Image src="/images/equipments/new-trailer.jpeg" alt="Tractor Trailers" fill className="object-cover transition-all duration-700 group-hover/card:scale-105 grayscale group-hover/card:grayscale-0" />
               </div>
               <div>
-                <h4 className="font-serif text-4xl text-champagne mb-4 uppercase">Tractor Trailers</h4>
+                <h4 className="font-serif text-4xl text-champagne mb-4 uppercase relative w-fit after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-[2px] after:bg-champagne after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover/card:after:scale-x-100">Tractor Trailers</h4>
                 <p className="text-xl mb-6 text-white">Loading, moving, and unloading logistics with ease</p>
                 <p className="text-white font-medium mb-8 leading-relaxed">
                   Well-designed and robustly made trailer for every purpose: Commercial or Agriculture
@@ -57,9 +58,9 @@ export default function EquipmentPage() {
             </div>
 
             {/* Water Tanker */}
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-obsidian-2/50 border border-alabaster/5 p-6 md:p-8">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-obsidian-2/50 border border-alabaster/5 p-6 md:p-8 group/card transition-colors hover:border-champagne/30">
               <div className="order-2 md:order-1">
-                <h4 className="font-serif text-4xl text-champagne mb-4 uppercase">Water Tanker</h4>
+                <h4 className="font-serif text-4xl text-champagne mb-4 uppercase relative w-fit after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-[2px] after:bg-champagne after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover/card:after:scale-x-100">Water Tanker</h4>
                 <p className="text-xl mb-6 text-white">Water Storage, Transporting, and Utility Equipment</p>
                 <p className="text-white font-medium mb-8 leading-relaxed">
                   Domestic water supply, irrigation, commercial purposes, extinguishing purposes
@@ -70,8 +71,8 @@ export default function EquipmentPage() {
                   </Link>
                 </div>
               </div>
-              <div className="order-1 md:order-2 aspect-[4/3] bg-obsidian border border-alabaster/10 flex items-center justify-center w-full">
-                <span className="text-alabaster/30 font-mono tracking-widest uppercase">Placeholder Image</span>
+              <div className="order-1 md:order-2 aspect-video bg-obsidian border border-alabaster/10 flex items-center justify-center w-full relative overflow-hidden group">
+                <Image src="/images/equipments/water-tanker.jpeg" alt="Water Tanker" fill className="object-cover transition-all duration-700 group-hover/card:scale-105 grayscale group-hover/card:grayscale-0" />
               </div>
             </div>
           </div>
@@ -91,12 +92,12 @@ export default function EquipmentPage() {
 
           <div className="space-y-8 md:space-y-16">
             {/* Sprayers */}
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-obsidian-2/50 border border-alabaster/5 p-6 md:p-8">
-              <div className="aspect-[4/3] bg-obsidian border border-alabaster/10 flex items-center justify-center w-full">
-                <span className="text-alabaster/30 font-mono tracking-widest uppercase">Placeholder Image</span>
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-obsidian-2/50 border border-alabaster/5 p-6 md:p-8 group/card transition-colors hover:border-champagne/30">
+              <div className="aspect-video bg-obsidian border border-alabaster/10 flex items-center justify-center w-full relative overflow-hidden group">
+                <Image src="/images/equipments/sprayer.jpeg" alt="Sprayer" fill className="object-cover transition-all duration-700 group-hover/card:scale-105 grayscale group-hover/card:grayscale-0" />
               </div>
               <div>
-                <h4 className="font-serif text-4xl text-champagne mb-4 uppercase">Sprayers</h4>
+                <h4 className="font-serif text-4xl text-champagne mb-4 uppercase relative w-fit after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-[2px] after:bg-champagne after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover/card:after:scale-x-100">Sprayers</h4>
                 <p className="text-xl mb-6 text-white">Economical & Professional sprayers: 400, 500, and 600 liters</p>
                 <p className="text-white font-medium mb-8 leading-relaxed">
                   3-point linkage Tractor Mounted Sprayers with high flow rate with optimum storage capacities delivering functional efficiency at low costs.
@@ -113,9 +114,9 @@ export default function EquipmentPage() {
             </div>
 
             {/* Fertilizer Spreaders */}
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-obsidian-2/50 border border-alabaster/5 p-6 md:p-8">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-obsidian-2/50 border border-alabaster/5 p-6 md:p-8 group/card transition-colors hover:border-champagne/30">
               <div className="order-2 md:order-1">
-                <h4 className="font-serif text-4xl text-champagne mb-4 uppercase">Fertilizer Spreaders</h4>
+                <h4 className="font-serif text-4xl text-champagne mb-4 uppercase relative w-fit after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-[2px] after:bg-champagne after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover/card:after:scale-x-100">Fertilizer Spreaders</h4>
                 <p className="text-xl mb-6 text-white">Simple Equipment for spreading granular fertilizers</p>
                 <p className="text-white font-medium mb-8 leading-relaxed">
                   Ease of use, consistency & efficiency; the traits of Farmking Fertilizer Spreaders
@@ -126,8 +127,8 @@ export default function EquipmentPage() {
                   </Link>
                 </div>
               </div>
-              <div className="order-1 md:order-2 aspect-[4/3] bg-obsidian border border-alabaster/10 flex items-center justify-center w-full">
-                <span className="text-alabaster/30 font-mono tracking-widest uppercase">Placeholder Image</span>
+              <div className="order-1 md:order-2 aspect-video bg-obsidian border border-alabaster/10 flex items-center justify-center w-full relative overflow-hidden group">
+                <Image src="/images/equipments/spreader.jpeg" alt="Fertilizer Spreader" fill className="object-cover transition-all duration-700 group-hover/card:scale-105 grayscale group-hover/card:grayscale-0" />
               </div>
             </div>
           </div>
@@ -147,12 +148,12 @@ export default function EquipmentPage() {
 
           <div className="space-y-8 md:space-y-16">
             {/* Mulcher */}
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-obsidian-2/50 border border-alabaster/5 p-6 md:p-8">
-              <div className="aspect-[4/3] bg-obsidian border border-alabaster/10 flex items-center justify-center w-full">
-                <span className="text-alabaster/30 font-mono tracking-widest uppercase">Placeholder Image</span>
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-obsidian-2/50 border border-alabaster/5 p-6 md:p-8 group/card transition-colors hover:border-champagne/30">
+              <div className="aspect-video bg-obsidian border border-alabaster/10 flex items-center justify-center w-full relative overflow-hidden group">
+                <Image src="/images/equipments/mulcher.jpeg" alt="Mulcher" fill className="object-cover transition-all duration-700 group-hover/card:scale-105 grayscale group-hover/card:grayscale-0" />
               </div>
               <div>
-                <h4 className="font-serif text-4xl text-champagne mb-4 uppercase">Mulcher</h4>
+                <h4 className="font-serif text-4xl text-champagne mb-4 uppercase relative w-fit after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-[2px] after:bg-champagne after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover/card:after:scale-x-100">Mulcher</h4>
                 <p className="text-xl mb-6 text-white">Chopping crop residue into organic matter</p>
                 <p className="text-white font-medium mb-8 leading-relaxed">
                   Mulchers are used for proper management of farm residues, unwanted grass, shrubs etc by chopping them into smaller pieces for better and faster decomposition
@@ -166,9 +167,9 @@ export default function EquipmentPage() {
             </div>
 
             {/* Forage Mower */}
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-obsidian-2/50 border border-alabaster/5 p-6 md:p-8">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-obsidian-2/50 border border-alabaster/5 p-6 md:p-8 group/card transition-colors hover:border-champagne/30">
               <div className="order-2 md:order-1">
-                <h4 className="font-serif text-4xl text-champagne mb-4 uppercase">Forage Mower</h4>
+                <h4 className="font-serif text-4xl text-champagne mb-4 uppercase relative w-fit after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-[2px] after:bg-champagne after:scale-x-0 after:origin-left after:transition-transform after:duration-500 group-hover/card:after:scale-x-100">Forage Mower</h4>
                 <p className="text-xl mb-6 text-white">Fine cutting of grass or fodder crops</p>
                 <p className="text-white font-medium mb-8 leading-relaxed">
                   Easy to use and high versatility equipment for cutting fodder crops
@@ -179,8 +180,8 @@ export default function EquipmentPage() {
                   </Link>
                 </div>
               </div>
-              <div className="order-1 md:order-2 aspect-[4/3] bg-obsidian border border-alabaster/10 flex items-center justify-center w-full">
-                <span className="text-alabaster/30 font-mono tracking-widest uppercase">Placeholder Image</span>
+              <div className="order-1 md:order-2 aspect-video bg-obsidian border border-alabaster/10 flex items-center justify-center w-full relative overflow-hidden group">
+                <Image src="/images/equipments/forage-mower.jpeg" alt="Forage Mower" fill className="object-cover transition-all duration-700 group-hover/card:scale-105 grayscale group-hover/card:grayscale-0" />
               </div>
             </div>
           </div>
