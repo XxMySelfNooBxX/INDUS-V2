@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { BackButton } from '@/components/BackButton';
+import { EquipmentGallery } from '@/components/EquipmentGallery';
 import { 
   Tractor, Truck, Box, Dumbbell, CheckCircle2, Plus, ArrowLeft,
   Activity, Database, CloudRain, Triangle, Settings, Radio, Ruler, Weight
@@ -45,24 +46,7 @@ export default async function EquipmentDetail({ params }: { params: Promise<{ sl
         {/* Top Section: Image & Details */}
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 mb-16">
           {/* Left: Images */}
-          <div className="space-y-4">
-            <div className="aspect-[4/3] bg-obsidian-2/50 border border-alabaster/10 flex items-center justify-center rounded-sm relative overflow-hidden group">
-              <Image 
-                src={`/images/equipments/${equipment.id}-main.jpeg`} 
-                alt={`${equipment.title} Main`} 
-                fill 
-                className="object-cover transition-transform duration-700 group-hover:scale-105" 
-              />
-            </div>
-            <div className="w-24 h-24 bg-obsidian-2/50 border border-alabaster/20 flex items-center justify-center rounded-sm cursor-pointer hover:border-champagne transition-colors relative overflow-hidden group">
-              <Image 
-                src={`/images/equipments/${equipment.id}-thumb.jpeg`} 
-                alt={`${equipment.title} Thumbnail`} 
-                fill 
-                className="object-cover transition-transform duration-700 group-hover:scale-105" 
-              />
-            </div>
-          </div>
+          <EquipmentGallery id={equipment.id} title={equipment.title} />
 
           {/* Right: Features */}
           <div>
