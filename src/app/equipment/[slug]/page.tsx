@@ -1,5 +1,6 @@
 import { equipmentData } from '@/data/equipmentData';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { BackButton } from '@/components/BackButton';
 import { 
@@ -45,11 +46,21 @@ export default async function EquipmentDetail({ params }: { params: Promise<{ sl
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 mb-16">
           {/* Left: Images */}
           <div className="space-y-4">
-            <div className="aspect-[4/3] bg-obsidian-2/50 border border-alabaster/10 flex items-center justify-center rounded-sm">
-              <span className="text-alabaster/20 font-mono tracking-widest uppercase text-sm">Main Product Image</span>
+            <div className="aspect-[4/3] bg-obsidian-2/50 border border-alabaster/10 flex items-center justify-center rounded-sm relative overflow-hidden group">
+              <Image 
+                src={`/images/equipments/${equipment.id}-main.jpeg`} 
+                alt={`${equipment.title} Main`} 
+                fill 
+                className="object-cover transition-transform duration-700 group-hover:scale-105" 
+              />
             </div>
-            <div className="w-24 h-24 bg-obsidian-2/50 border border-alabaster/20 flex items-center justify-center rounded-sm cursor-pointer hover:border-champagne transition-colors">
-              <span className="text-alabaster/20 font-mono tracking-widest uppercase text-[10px] text-center px-2">Thumb</span>
+            <div className="w-24 h-24 bg-obsidian-2/50 border border-alabaster/20 flex items-center justify-center rounded-sm cursor-pointer hover:border-champagne transition-colors relative overflow-hidden group">
+              <Image 
+                src={`/images/equipments/${equipment.id}-thumb.jpeg`} 
+                alt={`${equipment.title} Thumbnail`} 
+                fill 
+                className="object-cover transition-transform duration-700 group-hover:scale-105" 
+              />
             </div>
           </div>
 
