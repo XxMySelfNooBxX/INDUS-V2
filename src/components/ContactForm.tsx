@@ -13,7 +13,7 @@ export default function ContactForm() {
         name: '',
         email: '',
         address: '',
-        countryCode: '+1',
+        countryCode: '+91',
         phone: '',
         query: ''
     });
@@ -53,7 +53,7 @@ export default function ContactForm() {
                 if (result.success) {
                     setStatus('success');
                     setMessage(result.message || 'Successfully sent.');
-                    setFormData({ name: '', email: '', address: '', countryCode: '+1', phone: '', query: '' });
+                    setFormData({ name: '', email: '', address: '', countryCode: '+91', phone: '', query: '' });
                 } else {
                     setStatus('error');
                     setMessage(result.error || 'Something went wrong. Please try again.');
@@ -109,7 +109,7 @@ export default function ContactForm() {
                     value={formData.email}
                     onChange={handleChange}
                     className={`${inputClasses} ${errors.email ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : ''}`}
-                    placeholder="name@company.com"
+                    placeholder="Enter your email address"
                     aria-invalid={!!errors.email}
                 />
                 {errors.email && <span className="text-red-400 text-xs">{errors.email}</span>}
@@ -134,7 +134,7 @@ export default function ContactForm() {
                         value={formData.phone}
                         onChange={handleChange}
                         className={`flex-1 ${inputClasses} ${errors.phone ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : ''}`}
-                        placeholder="(555) 000-0000"
+                        placeholder="enter your number"
                         aria-invalid={!!errors.phone}
                     />
                 </div>

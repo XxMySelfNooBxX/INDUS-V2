@@ -84,17 +84,28 @@ export async function submitContactForm(formData: {
                 to: formData.email,
                 subject: 'We have received your inquiry - INDUS INC',
                 html: `
-                    <div style="font-family: sans-serif; color: #333;">
-                        <h2>Thank you for contacting INDUS INC</h2>
-                        <p>Dear ${formData.name},</p>
-                        <p>We have successfully received your inquiry regarding our agricultural equipment and solutions.</p>
-                        <p>One of our specialists will review your requirements and get back to you within 1-2 business days.</p>
-                        <br/>
-                        <p><strong>A copy of your submission:</strong></p>
-                        <p><i>${formData.query}</i></p>
-                        <br/>
-                        <p>Best regards,<br/>The INDUS INC Team</p>
-                        <p style="font-size: 12px; color: #888;">JAIPUR · ACHHNERA</p>
+                    <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);">
+                        <div style="background-color: #111111; padding: 30px; text-align: center; border-bottom: 3px solid #d4af37;">
+                            <h1 style="color: #ffffff; margin: 0; font-size: 24px; font-weight: 600; letter-spacing: 1px;">INDUS INC.</h1>
+                        </div>
+                        <div style="padding: 40px 30px; color: #374151; line-height: 1.6;">
+                            <h2 style="color: #111111; font-size: 20px; margin-top: 0; margin-bottom: 20px;">Inquiry Received</h2>
+                            <p style="margin-bottom: 15px;">Dear ${formData.name},</p>
+                            <p style="margin-bottom: 15px;">Thank you for reaching out to us. We have successfully received your inquiry regarding our agricultural equipment and solutions.</p>
+                            <p style="margin-bottom: 25px;">One of our specialists is reviewing your requirements and will get back to you within 1-2 business days.</p>
+                            
+                            <div style="background-color: #f9fafb; border-left: 4px solid #d4af37; padding: 20px; border-radius: 0 4px 4px 0; margin-bottom: 25px;">
+                                <h3 style="margin-top: 0; color: #111111; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px;">Your Message:</h3>
+                                <p style="margin: 0; font-style: italic; color: #4b5563;">"${formData.query}"</p>
+                            </div>
+                            
+                            <p style="margin-bottom: 5px;">Best regards,</p>
+                            <p style="font-weight: 600; color: #111111; margin-top: 0;">The INDUS INC Team</p>
+                        </div>
+                        <div style="background-color: #f3f4f6; padding: 20px; text-align: center; font-size: 12px; color: #6b7280; border-top: 1px solid #e5e7eb;">
+                            <p style="margin: 0 0 5px 0;">© ${new Date().getFullYear()} INDUS INC. All rights reserved.</p>
+                            <p style="margin: 0; letter-spacing: 0.5px;">JAIPUR · ACHHNERA</p>
+                        </div>
                     </div>
                 `
             });
