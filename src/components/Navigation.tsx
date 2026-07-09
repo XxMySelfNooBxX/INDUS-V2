@@ -25,7 +25,7 @@ export default function Navigation() {
 
   return (
     <nav 
-      className={`fixed top-0 left-0 right-0 px-6 md:px-12 flex justify-between items-center z-[100] transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 px-6 md:px-12 flex justify-between items-center z-[10000] transition-all duration-500 ${
         scrolled ? "py-4 bg-obsidian/95 backdrop-blur-md border-b border-alabaster/10" : "py-8 md:py-10 bg-transparent"
       }`}
     >
