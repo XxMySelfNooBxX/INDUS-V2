@@ -134,7 +134,7 @@ export default function ContactForm() {
                         value={formData.phone}
                         onChange={handleChange}
                         className={`flex-1 ${inputClasses} ${errors.phone ? 'border-red-500 focus:border-red-500 focus:ring-red-500' : ''}`}
-                        placeholder="enter your number"
+                        placeholder="Enter your number"
                         aria-invalid={!!errors.phone}
                     />
                 </div>
