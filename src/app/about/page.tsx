@@ -20,13 +20,13 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-2 gap-16 mb-20">
           <div>
             <h2 className="font-serif text-[32px] mb-4 text-champagne">Our Vision</h2>
-            <p className="font-sans text-[20px] text-alabaster/90 leading-relaxed">
+            <p className="font-sans text-[20px] text-alabaster/90 leading-relaxed text-justify">
               We envision a future where every client can thrive in a competitive landscape, guided by our core values of integrity, excellence, and collaboration. INDUS INC believes that combining people, technology and process is the way forward.
             </p>
           </div>
           <div>
             <h2 className="font-serif text-[32px] mb-4 text-champagne">Our Mission</h2>
-            <p className="font-sans text-[20px] text-alabaster/90 leading-relaxed">
+            <p className="font-sans text-[20px] text-alabaster/90 leading-relaxed text-justify">
               To strengthen India's development through innovative, sustainable, and high-quality Products and services to domestic and foreign customers with 100% satisfactory solutions. We are dedicated to delivering projects that empower communities, ensure safety, and promote environmental stewardship.
             </p>
           </div>
