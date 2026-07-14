@@ -249,12 +249,12 @@ export default function ProductsPage() {
         <p className="font-mono text-[16px] font-semibold tracking-[0.3em] text-champagne uppercase mb-6">The Archive</p>
         <div className="flex flex-col gap-8">
           <div>
-            <h1 className="font-serif text-[clamp(1.5rem,3.5vw,3.8rem)] font-medium leading-[1.05]">
+            <h1 className="font-serif text-[clamp(1.5rem,2.5vw,3.5rem)] font-medium leading-[1.05] md:whitespace-nowrap">
               Premium Commodities, Sourced with <span className="text-champagne italic">Precision.</span>
             </h1>
           </div>
           <div className="pb-4">
-            <p className="font-sans text-alabaster/90 text-xl leading-relaxed border-l border-champagne/40 pl-6 max-w-3xl">
+            <p className="font-sans text-alabaster/90 text-xl leading-relaxed border-l border-champagne/40 pl-6">
               A leading wholesale supplier and exporter. We provide bulk quantities to businesses worldwide, ensuring unmatched quality and reliable delivery.
             </p>
           </div>
