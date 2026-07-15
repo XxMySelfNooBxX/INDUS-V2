@@ -27,7 +27,11 @@ export default function VarietyCard({ item }: { item: any }) {
   );
 
   const BackContent = () => (
-    <div className="w-full h-full bg-obsidian-2/80 border border-champagne/20 p-6 flex flex-col shadow-xl">
+    <div 
+      onClick={() => setIsFlipped(false)}
+      className="w-full h-full bg-obsidian-2/80 border border-champagne/20 p-6 flex flex-col shadow-xl cursor-pointer pointer-events-auto"
+      title="Click anywhere to return"
+    >
       <div className="flex-1">
         <h4 className="font-serif text-[28px] text-champagne mb-3 border-b border-champagne/20 pb-3">{item.name}</h4>
         <p className="text-[17px] text-white leading-relaxed mb-6">{item.extendedDesc}</p>
@@ -51,13 +55,6 @@ export default function VarietyCard({ item }: { item: any }) {
           </div>
         )}
       </div>
-
-      <button 
-        onClick={() => setIsFlipped(false)} 
-        className="mt-6 pt-4 border-t border-alabaster/10 w-full text-left text-[13px] font-mono text-alabaster/80 hover:text-white uppercase tracking-[0.2em] flex items-center gap-2 transition-colors pointer-events-auto"
-      >
-        <RotateCw className="w-3 h-3 -rotate-90" /> Return
-      </button>
     </div>
   );
 
