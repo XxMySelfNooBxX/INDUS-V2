@@ -4,7 +4,13 @@ import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import ContactForm from './ContactForm';
 
-export default function InquiryModal() {
+export default function InquiryModal({
+  buttonText = "Submit Inquiry Form",
+  buttonClassName = "inline-block border border-champagne/60 px-8 py-4 text-[13px] font-semibold tracking-[0.3em] uppercase hover:bg-champagne hover:text-obsidian transition-all duration-500 text-champagne"
+}: {
+  buttonText?: string;
+  buttonClassName?: string;
+}) {
   const [isOpen, setIsOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -60,9 +66,9 @@ export default function InquiryModal() {
     <>
       <button 
         onClick={() => setIsOpen(true)}
-        className="inline-block border border-champagne/60 px-8 py-4 text-[13px] font-semibold tracking-[0.3em] uppercase hover:bg-champagne hover:text-obsidian transition-all duration-500 text-champagne"
+        className={buttonClassName}
       >
-        Submit Inquiry Form
+        {buttonText}
       </button>
 
       {mounted && createPortal(modalContent, document.body)}

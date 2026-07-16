@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import InquiryModal from "@/components/InquiryModal";
 
 export const metadata: Metadata = { title: "Services | Indus INC" };
 
@@ -93,9 +94,10 @@ export default function ServicesPage() {
         <p className="font-sans text-white max-w-3xl mx-auto text-xl leading-relaxed mb-12">
           From complex government irrigation networks to private highway construction, we bring unmatched scale, technology, and permanence to every project we touch.
         </p>
-        <Link href="/contact" className="inline-block border border-champagne/60 px-12 py-5 text-[13px] font-semibold tracking-[0.3em] uppercase hover:bg-champagne hover:text-obsidian transition-all duration-500 text-champagne">
-          Initiate a Project
-        </Link>
+        <InquiryModal 
+          buttonText="Initiate a Project" 
+          buttonClassName="inline-block border border-champagne/60 px-12 py-5 text-[13px] font-semibold tracking-[0.3em] uppercase hover:bg-champagne hover:text-obsidian transition-all duration-500 text-champagne"
+        />
       </section>
     </main>
   );
