@@ -12,7 +12,16 @@ export default function InquiryModal({
   buttonClassName?: string;
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
   const [mounted, setMounted] = useState(false);
+
+  const handleClose = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsOpen(false);
+      setIsClosing(false);
+    }, 300);
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -31,15 +40,15 @@ export default function InquiryModal({
   }, [isOpen]);
 
   const modalContent = isOpen ? (
-    <div className="fixed inset-0 z-[15000] flex items-center justify-center p-4 bg-obsidian/60 backdrop-blur-xl animate-[fadeIn_0.3s_ease-out]">
+    <div className={`fixed inset-0 z-[15000] flex items-center justify-center p-4 bg-obsidian/60 backdrop-blur-xl ${isClosing ? 'animate-[fadeOut_0.3s_ease-out_forwards]' : 'animate-[fadeIn_0.3s_ease-out]'}`}>
       <div 
         className="absolute inset-0 cursor-pointer" 
-        onClick={() => setIsOpen(false)}
+        onClick={handleClose}
         aria-label="Close modal background"
       />
-      <div className="relative w-full max-w-[600px] max-h-[90vh] overflow-y-auto bg-obsidian border border-alabaster/20 shadow-[0_0_50px_rgba(0,0,0,0.5)] animate-[fadeInUp_0.4s_ease-out] scrollbar-hide rounded-sm">
+      <div className={`relative w-full max-w-[600px] max-h-[90vh] overflow-y-auto bg-obsidian border border-alabaster/20 shadow-[0_0_50px_rgba(0,0,0,0.5)] ${isClosing ? 'animate-[fadeOut_0.3s_ease-out_forwards]' : 'animate-[fadeInUp_0.4s_ease-out]'} scrollbar-hide rounded-sm`}>
         <button 
-          onClick={() => setIsOpen(false)}
+          onClick={handleClose}
           className="absolute top-6 right-6 text-alabaster/50 hover:text-champagne transition-colors z-10"
           aria-label="Close"
         >
