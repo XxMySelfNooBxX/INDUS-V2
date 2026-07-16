@@ -155,35 +155,35 @@ const categories = [
     desc: "Carefully selected and processed to maintain nutritional value. Catering to wholesale distributors globally.",
     items: [
       { 
-        name: "Urad Dal", 
-        desc: "High-protein pulse available in whole and split varieties.",
-        extendedDesc: "Known for its rich, earthy flavor and dense nutritional profile, our Urad Dal is carefully processed to retain its natural proteins and dietary fiber. It is a staple in South Asian cuisine, perfect for creating smooth, creamy gravies and traditional batters.",
+        name: "Urad", 
+        desc: "High-protein pulse available in both Whole and Split (Dal) varieties.",
+        extendedDesc: "Known for its rich, earthy flavor and dense nutritional profile, our Urad is carefully processed to retain its natural proteins and dietary fiber. It is a staple in South Asian cuisine, perfect for creating smooth, creamy gravies and traditional batters.",
         specs: [
+          { label: "OPTIONS", value: "Whole & Dal" },
           { label: "PROTEIN", value: "Min 24%" },
-          { label: "MOISTURE", value: "Max 10%" },
-          { label: "FOREIGN MATTER", value: "Max 0.5%" }
+          { label: "MOISTURE", value: "Max 10%" }
         ],
         differentiator: "Machine-cleaned and sortexed to guarantee zero adulteration and uniform cooking time."
       },
       { 
-        name: "Moong Dal", 
-        desc: "Versatile pulse with excellent nutritional profile.",
-        extendedDesc: "Our premium Moong Dal is exceptionally easy to digest and packed with essential vitamins. Cultivated using sustainable farming practices, these lentils offer a quick cooking time and a mild, versatile taste that absorbs flavors beautifully.",
+        name: "Moong", 
+        desc: "Versatile pulse available in both Whole and Split (Dal) varieties.",
+        extendedDesc: "Our premium Moong is exceptionally easy to digest and packed with essential vitamins. Cultivated using sustainable farming practices, these lentils offer a quick cooking time and a mild, versatile taste that absorbs flavors beautifully.",
         specs: [
+          { label: "OPTIONS", value: "Whole & Dal" },
           { label: "PROTEIN", value: "Min 22%" },
-          { label: "MOISTURE", value: "Max 10%" },
-          { label: "SPLIT RATIO", value: "Min 98%" }
+          { label: "MOISTURE", value: "Max 10%" }
         ],
         differentiator: "Triple-polished for a pristine finish, ensuring a silky texture and rapid softening."
       },
       { 
         name: "Chana", 
-        desc: "Premium quality chickpeas available in various grades.",
-        extendedDesc: "Sourced from the finest chickpea harvests, our Chana is celebrated for its nutty flavor and firm texture that holds up flawlessly in slow-cooked stews and curries. High in complex carbohydrates and iron, it's an essential pantry staple.",
+        desc: "Premium quality whole chickpeas available in various grades.",
+        extendedDesc: "Sourced from the finest chickpea harvests, our whole Chana is celebrated for its nutty flavor and firm texture that holds up flawlessly in slow-cooked stews and curries. High in complex carbohydrates and iron, it's an essential pantry staple.",
         specs: [
+          { label: "OPTIONS", value: "Whole Only" },
           { label: "CALIBER", value: "7 - 9 mm" },
-          { label: "MOISTURE", value: "Max 12%" },
-          { label: "WEEVILED", value: "Max 1%" }
+          { label: "MOISTURE", value: "Max 12%" }
         ],
         differentiator: "Carefully size-graded to ensure even cooking and exceptional visual appeal."
       },
