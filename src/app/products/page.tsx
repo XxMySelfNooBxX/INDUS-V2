@@ -218,15 +218,15 @@ const categories = [
         differentiator: "An indispensable, eco-friendly solution for sustainable and organic farming systems globally."
       },
       { 
-        name: "Moringa Powder", 
-        desc: "Superfood for nutritional supplements and cosmetics.",
-        extendedDesc: "Milled from shade-dried, organically grown Moringa oleifera leaves to preserve their vivid green color and intense nutritional profile. Loaded with antioxidants, vitamins, and amino acids, it is an essential ingredient for premium dietary supplements and natural cosmetics.",
+        name: "Jwar (Sorghum)", 
+        desc: "Versatile, gluten-free cereal grain with exceptional drought tolerance.",
+        extendedDesc: "Grown in semi-arid regions, our Jwar is a highly sustainable, gluten-free ancient grain. Packed with dietary fiber, antioxidants, and protein, it serves as a nutritious staple for human consumption and a high-quality, energy-dense ingredient for premium animal feed formulations.",
         specs: [
-          { label: "PROTEIN", value: "Min 25%" },
-          { label: "PARTICLE SIZE", value: "80-100 Mesh" },
-          { label: "MOISTURE", value: "Max 8%" }
+          { label: "PROTEIN", value: "Min 10%" },
+          { label: "MOISTURE", value: "Max 12%" },
+          { label: "FOREIGN MATTER", value: "Max 1%" }
         ],
-        differentiator: "100% pure and organic, unlocking maximum bioavailability and therapeutic benefits."
+        differentiator: "Sustainably cultivated in rain-fed regions, offering a nutrient-dense and highly eco-friendly grain solution."
       }
     ],
     tag: "05",
