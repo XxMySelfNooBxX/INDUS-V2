@@ -62,11 +62,11 @@ export default function ContactPage() {
             Let's <span className="text-champagne italic">Connect.</span>
           </h2>
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 font-mono text-[16px] tracking-widest">
-            <a href="mailto:info@indusin.net" className="text-white hover:text-champagne transition-colors">info@indusin.net</a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-champagne transition-colors">FACEBOOK</a>
             <span className="hidden md:block text-alabaster/50">·</span>
-            <a href="mailto:indusinc9@gmail.com" className="text-white hover:text-champagne transition-colors">indusinc9@gmail.com</a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-champagne transition-colors">INSTAGRAM</a>
             <span className="hidden md:block text-alabaster/50">·</span>
-            <a href="tel:+919982999942" className="text-white hover:text-champagne transition-colors">+91 99829 99942</a>
+            <a href="https://wa.me/919982999942" target="_blank" rel="noopener noreferrer" className="text-white hover:text-champagne transition-colors">WHATSAPP</a>
           </div>
         </div>
       </div>
