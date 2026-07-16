@@ -3,7 +3,15 @@
 import { useRouter } from 'next/navigation';
 import { ArrowLeft } from 'lucide-react';
 
-export function BackButton({ fallbackHref }: { fallbackHref: string }) {
+export function BackButton({ 
+  fallbackHref,
+  label = "Back to Equipment",
+  className = "inline-flex items-center gap-2 text-alabaster/50 hover:text-champagne transition-colors mb-12 text-sm uppercase tracking-widest font-mono"
+}: { 
+  fallbackHref: string,
+  label?: string,
+  className?: string
+}) {
   const router = useRouter();
 
   return (
@@ -15,10 +23,10 @@ export function BackButton({ fallbackHref }: { fallbackHref: string }) {
           router.push(fallbackHref);
         }
       }} 
-      className="inline-flex items-center gap-2 text-alabaster/50 hover:text-champagne transition-colors mb-12 text-sm uppercase tracking-widest font-mono"
+      className={className}
     >
       <ArrowLeft className="w-4 h-4" />
-      Back to Equipment
+      {label}
     </button>
   );
 }

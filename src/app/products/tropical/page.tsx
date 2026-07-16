@@ -1,6 +1,5 @@
 import VarietyCard from "@/components/VarietyCard";
-import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { BackButton } from "@/components/BackButton";
 
 const tropicalSpices = [
   {
@@ -75,9 +74,11 @@ export default function TropicalSpicesPage() {
   return (
     <main className="pt-32 pb-20 animate-[fadeInUp_0.8s_ease-out_both] bg-obsidian text-white flex-grow">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <Link href="/products" className="inline-flex items-center gap-2 text-champagne/80 hover:text-champagne font-mono text-[13px] tracking-widest uppercase mb-8 transition-colors">
-          <ArrowLeft className="w-4 h-4" /> Back to Products
-        </Link>
+        <BackButton 
+          fallbackHref="/products" 
+          label="Back to Products" 
+          className="inline-flex items-center gap-2 text-champagne/80 hover:text-champagne font-mono text-[13px] tracking-widest uppercase mb-8 transition-colors" 
+        />
         
         <header className="mb-16">
           <p className="font-mono text-[16px] font-semibold tracking-[0.3em] text-champagne uppercase mb-4">Premium Selection</p>
