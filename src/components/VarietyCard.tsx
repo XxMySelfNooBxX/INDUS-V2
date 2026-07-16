@@ -73,9 +73,9 @@ export default function VarietyCard({ item }: { item: any }) {
           {item.specs && item.specs.length > 0 && (
             <div className="space-y-3 mb-6">
               {item.specs.map((spec: any, i: number) => (
-                <div key={i} className="flex justify-between items-end border-b border-alabaster/5 pb-2">
-                  <span className="text-white/90 text-[14px] tracking-wider uppercase font-mono">{spec.label}</span>
-                  <span className="text-white text-[16px] font-semibold">{spec.value}</span>
+                <div key={i} className="flex justify-between items-start gap-4 border-b border-alabaster/5 pb-2">
+                  <span className="text-white/90 text-[14px] tracking-wider uppercase font-mono whitespace-nowrap pt-1">{spec.label}</span>
+                  <span className="text-white text-[16px] font-semibold text-right">{spec.value}</span>
                 </div>
               ))}
             </div>
