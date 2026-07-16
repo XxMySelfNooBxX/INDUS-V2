@@ -64,7 +64,7 @@ export default function ContactPage() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 font-mono text-[16px] tracking-widest">
             <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-champagne transition-colors">FACEBOOK</a>
             <span className="hidden md:block text-alabaster/50">·</span>
-            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-champagne transition-colors">INSTAGRAM</a>
+            <a href="https://www.instagram.com/indusinc9/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-champagne transition-colors">INSTAGRAM</a>
             <span className="hidden md:block text-alabaster/50">·</span>
             <a href="https://wa.me/919982999942" target="_blank" rel="noopener noreferrer" className="text-white hover:text-champagne transition-colors">WHATSAPP</a>
           </div>
