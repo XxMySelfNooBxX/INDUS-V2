@@ -13,19 +13,14 @@ export default function ContactPage() {
         </h1>
 
         <div className="grid md:grid-cols-2 gap-16 mb-20">
-          <div className="p-10 border border-champagne/15 bg-obsidian-2/50 backdrop-blur-sm flex flex-col justify-between">
-            <div>
-              <p className="font-mono text-[15px] font-semibold tracking-[0.3em] text-champagne uppercase mb-6">Main Office / Adat</p>
-              <h3 className="font-serif text-3xl font-medium mb-6">Achhnera</h3>
-              <p className="font-sans text-white leading-loose text-lg mb-8">
-                Indus INC, B-26<br/>
-                Naveen Mandi Sthal, APMC<br/>
-                Achhnera, India
-              </p>
-            </div>
-            <div>
-              <InquiryModal />
-            </div>
+          <div className="p-10 border border-champagne/15 bg-obsidian-2/50 backdrop-blur-sm">
+            <p className="font-mono text-[15px] font-semibold tracking-[0.3em] text-champagne uppercase mb-6">Main Office / Adat</p>
+            <h3 className="font-serif text-3xl font-medium mb-6">Achhnera</h3>
+            <p className="font-sans text-white leading-loose text-lg">
+              Indus INC, B-26<br/>
+              Naveen Mandi Sthal, APMC<br/>
+              Achhnera, India
+            </p>
           </div>
           <div className="p-10 border border-champagne/15 bg-obsidian-2/50 backdrop-blur-sm">
             <p className="font-mono text-[15px] font-semibold tracking-[0.3em] text-champagne uppercase mb-6">Export / Import Office</p>
@@ -36,6 +31,10 @@ export default function ContactPage() {
               Jaipur 302021, India
             </p>
           </div>
+        </div>
+
+        <div className="flex justify-center mb-20">
+          <InquiryModal buttonClassName="inline-block border border-champagne/60 px-12 py-5 text-[13px] font-semibold tracking-[0.3em] uppercase hover:bg-champagne hover:text-obsidian transition-all duration-500 text-champagne" />
         </div>
 
         <div className="text-center py-20 border-t border-alabaster/10 mt-20">
