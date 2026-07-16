@@ -62,7 +62,7 @@ export default function ServicesPage() {
                     <h3 className="font-serif text-[clamp(2.5rem,4vw,4rem)] leading-[1.05] mb-8 group-hover:text-champagne transition-colors duration-500">
                       {s.title}
                     </h3>
-                    <p className="font-sans text-xl text-white leading-relaxed">
+                    <p className="font-sans text-xl text-white leading-relaxed text-justify hyphens-auto">
                       {s.desc}
                     </p>
                   </div>
