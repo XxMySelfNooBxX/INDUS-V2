@@ -34,13 +34,13 @@ export default function ServicesPage() {
       <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32 md:mb-48">
         <p className="font-mono text-[15px] font-semibold tracking-[0.4em] text-champagne uppercase mb-6">Our Capabilities</p>
         <div className="grid lg:grid-cols-12 gap-12 items-end">
-          <div className="lg:col-span-8">
-            <h1 className="font-serif text-[clamp(3rem,6vw,5.5rem)] font-medium leading-[1.05]">
+          <div className="lg:col-span-7">
+            <h1 className="font-serif text-[clamp(2.5rem,5vw,4.5rem)] font-medium leading-[1.05]">
               The Architecture of <br/><span className="text-champagne italic">Infrastructure.</span>
             </h1>
           </div>
-          <div className="lg:col-span-4 pb-4">
-            <p className="font-sans text-alabaster/90 text-[22px] leading-relaxed border-l border-champagne/60 pl-6">
+          <div className="lg:col-span-5 pb-4">
+            <p className="font-sans text-alabaster/90 text-[18px] lg:text-[20px] leading-relaxed border-l border-champagne/60 pl-6">
               Combining engineering precision with business technology to execute massive turnkey projects across India and South East Asia.
             </p>
           </div>
