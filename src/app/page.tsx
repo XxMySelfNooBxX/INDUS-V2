@@ -41,9 +41,7 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce z-10">
-          <p className="font-mono text-[10px] tracking-widest text-champagne uppercase opacity-70">Scroll Down</p>
-        </div>
+
       </section>
 
       {/* Introduction Section */}
