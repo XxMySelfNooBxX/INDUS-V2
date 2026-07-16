@@ -20,7 +20,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <Preloader />
         <Navigation />
-        {children}
+        <div>
+          {children}
+        </div>
         <Footer />
       </body>
     </html>

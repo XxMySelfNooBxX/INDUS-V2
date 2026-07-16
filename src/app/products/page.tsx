@@ -215,15 +215,28 @@ const categories = [
     desc: "High-quality spices for domestic and international markets.",
     items: [
       { 
-        name: "Whole & Ground Spices", 
-        desc: "Export-grade spices maintaining natural aroma and oils.",
-        extendedDesc: "Carefully sourced from premium spice-growing belts, our whole and ground spices are processed using cold-grinding techniques to preserve their essential volatile oils, intense aroma, and vibrant color. Perfect for global culinary and industrial uses.",
+        name: "Traditional Spices", 
+        href: "/products/traditional",
+        desc: "Classic, time-honored spices with authentic regional flavors.",
+        extendedDesc: "Sourced directly from heritage farms, our traditional spices deliver the quintessential flavors and aromas that have defined local cuisines for centuries. Processed using age-old techniques to ensure maximum authenticity.",
         specs: [
-          { label: "VOLATILE OIL", value: "Min 2.5%" },
+          { label: "VOLATILE OIL", value: "Min 2.0%" },
           { label: "MOISTURE", value: "Max 10%" },
-          { label: "ASH CONTENT", value: "Max 7%" }
+          { label: "ASH CONTENT", value: "Max 6%" }
         ],
-        differentiator: "Guaranteed zero artificial colors or fillers, offering uncompromised authenticity and culinary brilliance."
+        differentiator: "100% authentic, celebrating the rich culinary heritage of their origin."
+      },
+      { 
+        name: "Tropical Spices", 
+        href: "/products/tropical",
+        desc: "Exotic and vibrant spices cultivated in lush tropical climates.",
+        extendedDesc: "Grown in nutrient-rich tropical soils, these exotic spices boast intense flavors and striking aromas. Perfect for adding a bold, unique profile to premium culinary creations and gourmet products.",
+        specs: [
+          { label: "VOLATILE OIL", value: "Min 3.0%" },
+          { label: "MOISTURE", value: "Max 12%" },
+          { label: "PURITY", value: "99.5%" }
+        ],
+        differentiator: "Sustainably harvested from select tropical ecosystems for unparalleled intensity."
       }
     ],
     tag: "06",
