@@ -8,19 +8,19 @@ const traditionalSpices = [
     desc: "Golden spice known for its earthy flavor and powerful curcuminoids.",
     extendedDesc: "Our premium turmeric is sourced from regions renowned for high curcumin content. It imparts a vibrant yellow color and a warm, slightly bitter flavor to dishes, making it essential for traditional curries and modern wellness blends.",
     specs: [
+      { label: "APPLICATIONS", value: "Health drinks, nutraceuticals, natural coloring" },
       { label: "CURCUMIN", value: "Min 3-5%" },
-      { label: "MOISTURE", value: "Max 10%" },
-      { label: "FORM", value: "Whole & Powder" }
+      { label: "FORM", value: "Whole Finger, Polished & Powder" }
     ],
     differentiator: "Sun-dried to naturally preserve its brilliant hue and potent anti-inflammatory properties."
   },
   {
     name: "Cumin",
     desc: "Aromatic spice with a warm, nutty, and peppery flavor profile.",
-    extendedDesc: "A staple in global cuisines, our cumin seeds are carefully harvested and graded for size and oil content. The robust aroma and distinctive flavor make it perfect for tempering, roasting, and blending into complex spice mixes.",
+    extendedDesc: "A staple in global cuisines, our cumin seeds are carefully harvested, machine-cleaned, and sortex-graded for size and oil content. The robust aroma and distinctive flavor make it perfect for tempering, roasting, and blending into complex spice mixes.",
     specs: [
+      { label: "APPLICATIONS", value: "Spice rubs, snack seasonings, ready meals" },
       { label: "VOLATILE OIL", value: "Min 2.5%" },
-      { label: "PURITY", value: "99%" },
       { label: "FORM", value: "Seeds & Ground" }
     ],
     differentiator: "Mechanically cleaned and sorted to ensure zero impurities and consistent flavor."
@@ -28,11 +28,11 @@ const traditionalSpices = [
   {
     name: "Coriander",
     desc: "Citrusy, sweet spice that forms the base of many savory dishes.",
-    extendedDesc: "Our coriander seeds offer a delicate balance of citrus and woody notes. They are highly versatile, acting as a thickening agent and flavor enhancer in gravies, marinades, and pickling brines.",
+    extendedDesc: "Our coriander seeds offer a delicate balance of citrus and woody notes. Steam-treated grades are available for markets with strict microbiological requirements. They are highly versatile, acting as a thickening agent and flavor enhancer in gravies, marinades, and pickling brines.",
     specs: [
+      { label: "APPLICATIONS", value: "Pickling, meat seasoning, snack flavoring" },
       { label: "VOLATILE OIL", value: "Min 0.3%" },
-      { label: "SPLIT SEEDS", value: "Max 5%" },
-      { label: "FORM", value: "Whole & Powder" }
+      { label: "FORM", value: "Whole, Split (Dhania Dal) & Powder" }
     ],
     differentiator: "Roasted gently before grinding to unlock its full aromatic potential."
   },

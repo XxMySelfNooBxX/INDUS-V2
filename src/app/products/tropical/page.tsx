@@ -15,12 +15,12 @@ const tropicalSpices = [
     differentiator: "Sourced from high-altitude estates ensuring a denser, more flavorful peppercorn."
   },
   {
-    name: "Ceylon Cinnamon",
+    name: "Cinnamon",
     desc: "True cinnamon offering a delicate, sweet flavor and floral notes.",
-    extendedDesc: "Distinct from Cassia, our authentic Ceylon Cinnamon is hand-rolled from the inner bark of the Cinnamomum verum tree. It offers a sophisticated, subtle sweetness perfect for baking, beverages, and gourmet savory dishes.",
+    extendedDesc: "Distinct from ordinary bark, our authentic Cinnamon is hand-rolled from the inner bark of the Cinnamomum tree. We supply both Ceylon and Cassia grades depending on the destination market requirements, offering a sophisticated sweetness perfect for baking, beverages, and gourmet savory dishes.",
     specs: [
+      { label: "APPLICATIONS", value: "Bakery, dips, wet rubs, ready meals" },
       { label: "COUMARIN", value: "Ultra Low (<0.004%)" },
-      { label: "GRADE", value: "Alba / C5 Special" },
       { label: "FORM", value: "Quills & Powder" }
     ],
     differentiator: "100% authentic Ceylon origin, ensuring safe daily consumption and superior taste."
@@ -50,10 +50,10 @@ const tropicalSpices = [
   {
     name: "Fennel",
     desc: "Sweet, licorice-like flavor offering a cooling and refreshing finish.",
-    extendedDesc: "Our fennel seeds are plump, green, and highly aromatic. They are widely used as a digestive aid, a flavor base in Mediterranean and Indian cooking, and an essential component in absinthe and sausages.",
+    extendedDesc: "Our fennel seeds are plump, green, bold in aroma, and uniform in size. Packed to strict export specifications, they are widely used as a digestive aid, a flavor base in Mediterranean and Indian cooking, and an essential component in absinthe and sausages.",
     specs: [
+      { label: "APPLICATIONS", value: "Tea infusions, digestive health, baking" },
       { label: "VOLATILE OIL", value: "Min 1.5%" },
-      { label: "PURITY", value: "99.5%" },
       { label: "FORM", value: "Whole & Powder" }
     ],
     differentiator: "Harvested at peak greenness to ensure a sweeter, more robust licorice profile."
@@ -63,8 +63,8 @@ const tropicalSpices = [
     desc: "Warm, zesty, and biting spice essential for both culinary and medicinal uses.",
     extendedDesc: "Our dried ginger is expertly processed to remove fibrous textures while concentrating its sharp, spicy flavor. It is a cornerstone ingredient in Asian cuisine, gingerbread, and immune-boosting teas.",
     specs: [
+      { label: "APPLICATIONS", value: "Wellness shots, nutraceuticals, marinades" },
       { label: "GINGEROL", value: "Min 1.5%" },
-      { label: "MOISTURE", value: "Max 10%" },
       { label: "FORM", value: "Whole, Sliced, Powder" }
     ],
     differentiator: "Carefully peeled and dried to prevent mold and preserve its intense, zesty bite."
