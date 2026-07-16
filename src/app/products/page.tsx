@@ -344,8 +344,8 @@ export default function ProductsPage() {
       {/* Trust Signals / The Advantage */}
       <section className="py-32 px-6 md:px-12 max-w-7xl mx-auto border-t border-alabaster/10">
         <div className="text-center mb-20">
-          <p className="font-mono text-[15px] tracking-[0.4em] text-champagne uppercase mb-6 font-semibold">The Advantage</p>
-          <h2 className="font-serif text-[clamp(2.5rem,4vw,3.5rem)]">Why Partner With Us?</h2>
+          <p className="font-mono text-[17px] tracking-[0.3em] text-champagne uppercase mb-4 font-semibold">The Advantage</p>
+          <h2 className="font-serif text-[clamp(2rem,3vw,3rem)] leading-tight">Why Partner With Us?</h2>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
