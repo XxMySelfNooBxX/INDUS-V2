@@ -31,7 +31,7 @@ export default function InquiryModal({
   }, [isOpen]);
 
   const modalContent = isOpen ? (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-obsidian/60 backdrop-blur-xl animate-[fadeIn_0.3s_ease-out]">
+    <div className="fixed inset-0 z-[15000] flex items-center justify-center p-4 bg-obsidian/60 backdrop-blur-xl animate-[fadeIn_0.3s_ease-out]">
       <div 
         className="absolute inset-0 cursor-pointer" 
         onClick={() => setIsOpen(false)}
