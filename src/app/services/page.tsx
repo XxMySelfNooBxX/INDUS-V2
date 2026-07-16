@@ -57,18 +57,18 @@ export default function ServicesPage() {
                 <div className={`grid md:grid-cols-12 gap-12 md:gap-16 items-center ${isEven ? '' : 'md:flex-row-reverse'}`}>
                   
                   {/* Text Content */}
-                  <div className={`md:col-span-5 flex flex-col justify-center z-20 ${isEven ? 'md:order-1' : 'md:order-2'}`}>
+                  <div className={`md:col-span-6 flex flex-col justify-center z-20 ${isEven ? 'md:order-1' : 'md:order-2'}`}>
 
                     <h3 className="font-serif text-[clamp(2.5rem,4vw,4rem)] leading-[1.05] mb-8 group-hover:text-champagne transition-colors duration-500">
                       {s.title}
                     </h3>
-                    <p className="font-sans text-xl text-white leading-relaxed text-justify hyphens-auto">
+                    <p className="font-sans text-[19px] text-white leading-relaxed text-justify hyphens-auto">
                       {s.desc}
                     </p>
                   </div>
 
                   {/* Image Content */}
-                  <div className={`md:col-span-7 relative z-10 ${isEven ? 'md:order-2' : 'md:order-1'} mt-12 md:mt-0`}>
+                  <div className={`md:col-span-6 relative z-10 ${isEven ? 'md:order-2' : 'md:order-1'} mt-12 md:mt-0`}>
                     <div className="aspect-[4/3] md:aspect-[16/10] relative overflow-hidden border border-champagne/10">
                       <div className="absolute inset-0 bg-obsidian/40 group-hover:bg-transparent transition-colors duration-1000 z-10 pointer-events-none"></div>
                       <Image 
