@@ -123,6 +123,28 @@ const categories = [
           { label: "DEFECTIVE", value: "Max 1%" }
         ],
         differentiator: "Strictly tested for aflatoxin compliance, delivering guaranteed safety and exceptional nutty richness."
+      },
+      {
+        name: "Avocado",
+        desc: "Premium grade avocados for cold-pressed oil extraction and culinary applications.",
+        extendedDesc: "Sustainably grown in nutrient-rich soils, our avocados are carefully harvested at peak ripeness to ensure maximum oil yield and superior creamy texture. Ideal for premium cosmetic applications and high-end culinary uses, delivering a rich profile of healthy monounsaturated fats.",
+        specs: [
+          { label: "OIL CONTENT", value: "15% - 30%" },
+          { label: "GRADE", value: "Premium Export" },
+          { label: "PURITY", value: "100% Natural" }
+        ],
+        differentiator: "Harvested at peak maturity for maximum oil yield and an exceptionally smooth, buttery profile."
+      },
+      {
+        name: "Olives",
+        desc: "Select olives optimized for premium extra virgin oil production.",
+        extendedDesc: "Cultivated in ideal climates, our olives are hand-picked to prevent bruising and processed within hours of harvest. This dedication guarantees a low acidity level, preserving the robust, fruity aroma essential for premium Extra Virgin Olive Oil extraction.",
+        specs: [
+          { label: "ACIDITY", value: "Max 0.8%" },
+          { label: "OIL YIELD", value: "18% - 22%" },
+          { label: "HARVEST", value: "Hand-picked" }
+        ],
+        differentiator: "Processed immediately after harvest to guarantee ultra-low acidity and a robust, fruity aroma."
       }
     ],
     tag: "03",
