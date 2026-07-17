@@ -31,7 +31,7 @@ export default function Navigation() {
       }`}
     >
       <Link href="/" className="hover:opacity-80 transition-opacity">
-        <Image src="/images/logo.png" alt="Indus INC Logo" width={275} height={154} className="w-auto h-12 md:h-16 object-contain" priority />
+        <Image src="/images/logo_transparent.png" alt="Indus INC Logo" width={275} height={154} className="w-auto h-12 md:h-16 object-contain" priority />
       </Link>
       <ul className="hidden md:flex gap-10 list-none">
         {links.map((link) => (
