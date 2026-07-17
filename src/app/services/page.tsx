@@ -33,7 +33,7 @@ export default function ServicesPage() {
     <main className="pt-32 pb-20 min-h-screen animate-[fadeInUp_0.8s_ease-out_both]">
       {/* Hero Header */}
       <section className="px-6 md:px-12 max-w-7xl mx-auto mb-32 md:mb-48">
-        <p className="font-mono text-[15px] font-semibold tracking-[0.4em] text-champagne uppercase mb-6">Our Capabilities</p>
+        <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-4 md:mb-6">Our Capabilities</p>
         <div className="grid lg:grid-cols-12 gap-12 items-end">
           <div className="lg:col-span-7">
             <h1 className="font-serif text-[clamp(2.5rem,5vw,4.5rem)] font-medium leading-[1.05]">

@@ -21,16 +21,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="h-screen flex flex-col items-center justify-center text-center px-6 relative z-10 overflow-hidden">
         <div className={`relative z-10 flex flex-col items-center ${isFirstLoad ? "animate-[fadeInUp_1s_ease-out_3.5s_both]" : "animate-[fadeInUp_1s_ease-out_both]"}`}>
-          <p className="font-mono text-[16px] font-semibold tracking-[0.3em] text-champagne uppercase mb-6">
+          <p className="font-mono text-xs sm:text-sm md:text-base font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-4 md:mb-6">
             Premium Wholesale Agricultural Products & Grains
           </p>
-          <h1 className="font-serif text-[clamp(3rem,10vw,10rem)] font-medium leading-[0.9] tracking-[0.02em] text-alabaster/90">
+          <h1 className="font-serif text-[clamp(3rem,7vw,6.5rem)] font-medium leading-[0.9] tracking-[0.02em] text-alabaster/90">
             INDUS INC
           </h1>
-          <p className="mt-8 text-[15px] font-semibold tracking-[0.25em] uppercase text-alabaster/90">
+          <p className="mt-6 md:mt-8 text-sm sm:text-base md:text-xl font-semibold tracking-[0.25em] uppercase text-alabaster/90">
             Cultivating <span className="text-champagne">Permanence</span>
           </p>
-          <p className="mt-8 max-w-2xl text-alabaster/90 font-sans leading-relaxed text-lg">
+          <p className="mt-6 md:mt-8 max-w-2xl text-alabaster/90 font-sans leading-relaxed text-base md:text-lg">
             Founded in 2006. We are a leading wholesale supplier and exporter of premium quality agricultural products, grains, cereals, oilseeds, and pulses to over 10 countries.
           </p>
           
@@ -48,7 +48,7 @@ export default function Home() {
       <section className="py-32 px-6 md:px-12 relative z-10 border-t border-alabaster/10">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
           <div className="flex-1">
-            <p className="font-mono text-[16px] font-semibold tracking-[0.3em] text-champagne uppercase mb-6">Who We Are</p>
+            <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-4 md:mb-6">Who We Are</p>
             <h2 className="font-serif text-[clamp(2rem,4vw,3.5rem)] font-medium leading-[1.1] mb-8">
               Business Technologists <br />
               <span className="text-champagne italic">in the Agricultural Realm.</span>
@@ -87,7 +87,7 @@ export default function Home() {
       <section className="py-32 px-6 md:px-12 relative z-10 border-t border-alabaster/10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
-            <p className="font-mono text-[16px] font-semibold tracking-[0.3em] text-champagne uppercase mb-6">Our Expertise</p>
+            <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-4 md:mb-6">Our Expertise</p>
             <h2 className="font-serif text-[clamp(2.5rem,5vw,4rem)] font-medium leading-[1.05]">
               Multi Division, <br /><span className="text-champagne italic">One Standard of Excellence.</span>
             </h2>
@@ -96,7 +96,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             {/* Commodities */}
             <div className="border border-alabaster/10 hover:border-champagne/40 transition-colors duration-500 p-12 group bg-obsidian-2/30">
-              <p className="font-mono text-[16px] font-semibold tracking-[0.3em] text-champagne uppercase mb-8">The Archive</p>
+              <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-6 md:mb-8">The Archive</p>
               <h3 className="font-serif text-3xl mb-6">Agricultural Commodities</h3>
               <p className="font-sans text-alabaster/80 leading-relaxed mb-12">
                 Premium wholesale supply and export of top-tier rice varieties, wheat, barley, oilseeds, and specialty crops. Cultivated with care, sourced with precision.
@@ -108,7 +108,7 @@ export default function Home() {
 
             {/* Infrastructure */}
             <div className="border border-alabaster/10 hover:border-champagne/40 transition-colors duration-500 p-12 group bg-obsidian-2/30">
-              <p className="font-mono text-[16px] font-semibold tracking-[0.3em] text-champagne uppercase mb-8">Capabilities</p>
+              <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-6 md:mb-8">Capabilities</p>
               <h3 className="font-serif text-3xl mb-6">Civil Infrastructure</h3>
               <p className="font-sans text-alabaster/80 leading-relaxed mb-12">
                 Large-scale infrastructure development including earthen dams, canal networks, automated irrigation systems, and highway construction across central India.
@@ -120,7 +120,7 @@ export default function Home() {
 
             {/* Agriculture Equipment */}
             <div className="border border-alabaster/10 hover:border-champagne/40 transition-colors duration-500 p-12 group bg-obsidian-2/30">
-              <p className="font-mono text-[16px] font-semibold tracking-[0.3em] text-champagne uppercase mb-8">Machinery</p>
+              <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-6 md:mb-8">Machinery</p>
               <h3 className="font-serif text-3xl mb-6">Agriculture Equipment</h3>
               <p className="font-sans text-alabaster/80 leading-relaxed mb-12">
                 Supplying state-of-the-art farming machinery and technology to optimize agricultural operations, enhance yield, and drive modern farming practices.
@@ -132,7 +132,7 @@ export default function Home() {
 
             {/* Consultancy Services */}
             <div className="border border-alabaster/10 hover:border-champagne/40 transition-colors duration-500 p-12 group bg-obsidian-2/30">
-              <p className="font-mono text-[16px] font-semibold tracking-[0.3em] text-champagne uppercase mb-8">Advisory</p>
+              <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-6 md:mb-8">Advisory</p>
               <h3 className="font-serif text-3xl mb-6">Consultancy Services</h3>
               <p className="font-sans text-alabaster/80 leading-relaxed mb-12">
                 Expert agricultural and infrastructure consulting. Providing strategic insights, project management, and sustainable solutions for large-scale operations.

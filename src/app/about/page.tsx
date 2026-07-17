@@ -12,8 +12,8 @@ export default function AboutPage() {
   return (
     <main className="pt-32 pb-20 px-6 md:px-12 min-h-screen animate-[fadeInUp_0.8s_ease-out_both]">
       <div className="max-w-5xl mx-auto">
-        <p className="font-mono text-[16px] font-semibold tracking-[0.3em] text-champagne uppercase mb-6">Our Legacy</p>
-        <h1 className="font-serif text-[clamp(2.5rem,6vw,5rem)] font-medium leading-[1.05] mb-12">
+        <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-4 md:mb-6">Our Legacy</p>
+        <h1 className="font-serif text-[clamp(2.5rem,5vw,4.5rem)] font-medium leading-[1.05] mb-12">
           Business Technologists <br/>in the <span className="text-champagne italic">Agricultural Realm.</span>
         </h1>
         
