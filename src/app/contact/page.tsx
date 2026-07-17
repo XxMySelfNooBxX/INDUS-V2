@@ -66,7 +66,7 @@ export default function ContactPage() {
             <span className="hidden md:block text-alabaster/50">·</span>
             <a href="https://www.instagram.com/indusinc9/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-champagne transition-colors">INSTAGRAM</a>
             <span className="hidden md:block text-alabaster/50">·</span>
-            <a href="https://wa.me/919982999942" target="_blank" rel="noopener noreferrer" className="text-white hover:text-champagne transition-colors">WHATSAPP</a>
+            <a href="https://wa.me/918005508939" target="_blank" rel="noopener noreferrer" className="text-white hover:text-champagne transition-colors">WHATSAPP</a>
           </div>
         </div>
       </div>

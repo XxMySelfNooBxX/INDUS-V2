@@ -7,6 +7,58 @@ export const metadata: Metadata = { title: "The Archive | Indus INC" };
 
 const categories = [
   { 
+    title: "Premium Paddy Varieties", 
+    desc: "We specialize in sourcing of premium paddy that meet millers and processor quality standards. Sourced directly from farmers and FPO's.",
+    items: [
+      { 
+        name: "1509 Basmati Paddy", 
+        desc: "Raw, early-maturing paddy variety offering excellent milling yield.",
+        extendedDesc: "The 1509 Basmati paddy is highly sought after by millers for its fast turnaround and high yield. Harvested at optimal moisture levels to prevent grain breakage during the milling process, ensuring maximum profitability.",
+        specs: [
+          { label: "Moisture Content", value: "Max 12-14%" },
+          { label: "Impurities", value: "Max 1%" },
+          { label: "Milling Yield", value: "High Out-turn" }
+        ],
+        differentiator: "Optimal moisture levels and clean sourcing guarantee superior out-turn for millers."
+      },
+      { 
+        name: "1718 Basmati Paddy", 
+        desc: "Disease-resistant raw paddy yielding extra-long luxury basmati grains.",
+        extendedDesc: "Carefully sourced 1718 paddy boasts inherent resistance to bacterial blight. It provides millers with robust, healthy grains that result in premium extra-long luxury rice after processing, with minimal breakage.",
+        specs: [
+          { label: "Moisture Content", value: "Max 12-14%" },
+          { label: "Discolored Grains", value: "Max 1%" },
+          { label: "Grain Profile", value: "Extra-long & Robust" }
+        ],
+        differentiator: "Resilient crop qualities translate directly into higher quality, unbroken milled grains."
+      },
+      { 
+        name: "Sugandha Paddy", 
+        desc: "Aromatic non-basmati raw paddy for cost-effective, high-quality milling.",
+        extendedDesc: "Sourced from select regions, Sugandha paddy is an excellent choice for producing economical yet highly aromatic rice. It delivers consistent milling quality, making it a reliable staple for large-scale processors.",
+        specs: [
+          { label: "Moisture Content", value: "Max 13%" },
+          { label: "Aroma (Raw)", value: "Present" },
+          { label: "Foreign Matter", value: "Max 1.5%" }
+        ],
+        differentiator: "An economical raw material that consistently yields aromatic, high-quality commercial rice."
+      },
+      { 
+        name: "1847 Basmati Paddy", 
+        desc: "High-yield, resilient premium paddy with exceptional processing characteristics.",
+        extendedDesc: "The latest in agricultural advancement, 1847 paddy combines high farm yield with superb milling resilience. It resists major diseases in the field, ensuring the raw grains arrive at the mill healthy, intact, and ready for optimal processing.",
+        specs: [
+          { label: "Moisture Content", value: "Max 12%" },
+          { label: "Disease Resistance", value: "High (Blight & Blast)" },
+          { label: "Processing Quality", value: "Excellent" }
+        ],
+        differentiator: "Cutting-edge crop resilience ensuring pristine raw material for top-tier milling."
+      }
+    ],
+    tag: "00",
+    image: "/images/products/paddy.jpeg"
+  },
+  { 
     title: "Premium Rice Varieties", 
     desc: "We specialize in wholesale and export of premium rice varieties that meet international quality standards. Sourced, processed, and packaged for freshness.",
     items: [
