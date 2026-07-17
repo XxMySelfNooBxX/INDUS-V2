@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
@@ -29,8 +30,8 @@ export default function Navigation() {
         scrolled ? "py-4 bg-obsidian/95 backdrop-blur-md border-b border-alabaster/10" : "py-8 md:py-10 bg-transparent"
       }`}
     >
-      <Link href="/" className="font-serif text-xl tracking-[0.3em] text-white hover:opacity-80 transition-opacity">
-        INDUS INC
+      <Link href="/" className="hover:opacity-80 transition-opacity">
+        <Image src="/images/logo.png" alt="Indus INC Logo" width={275} height={154} className="w-auto h-12 md:h-16 object-contain" priority />
       </Link>
       <ul className="hidden md:flex gap-10 list-none">
         {links.map((link) => (
