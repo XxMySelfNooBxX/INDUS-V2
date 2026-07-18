@@ -41,16 +41,33 @@ export default function AboutPage() {
 
         <div className="border-t border-alabaster/10 pt-20">
           <h2 className="font-serif text-5xl mb-16 text-center">The Four Pillars</h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            {pillars.map((p, i) => (
-              <div key={i} className="p-8 border border-champagne/10 hover:border-champagne/40 transition-all duration-500 group bg-obsidian-2/30 text-center">
-                <div className="mb-4 flex items-center justify-center gap-4">
-                  <div className="w-2 h-2 rounded-full bg-champagne"></div>
-                  <h3 className="font-serif text-3xl text-champagne transition-colors">{p.title}</h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            {pillars.map((p, i) => {
+              const numerals = ["I", "II", "III", "IV"];
+              return (
+                <div
+                  key={i}
+                  className="relative p-10 border border-champagne/10 hover:border-champagne/50 transition-all duration-500 group bg-obsidian-2/30 overflow-hidden"
+                >
+                  {/* Roman numeral watermark */}
+                  <span
+                    className="absolute -top-4 -right-2 font-serif font-bold text-[6rem] leading-none text-champagne/[0.06] group-hover:text-champagne/[0.12] select-none pointer-events-none transition-all duration-700 group-hover:scale-110 origin-top-right"
+                    aria-hidden="true"
+                  >
+                    {numerals[i]}
+                  </span>
+
+                  {/* Shimmer sweep on hover */}
+                  <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-champagne/5 to-transparent pointer-events-none" />
+
+                  {/* Gold accent line */}
+                  <div className="w-8 h-[2px] bg-champagne mb-6 transition-all duration-500 group-hover:w-16" />
+
+                  <h3 className="font-serif text-3xl text-champagne mb-4 relative z-10">{p.title}</h3>
+                  <p className="font-sans text-lg text-alabaster/80 leading-relaxed relative z-10">{p.desc}</p>
                 </div>
-                <p className="font-sans text-lg text-alabaster/90 leading-relaxed">{p.desc}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

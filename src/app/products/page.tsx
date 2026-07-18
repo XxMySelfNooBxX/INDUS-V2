@@ -334,7 +334,7 @@ export default function ProductsPage() {
       
       {/* Hero Header */}
       <section className="px-6 md:px-12 max-w-7xl mx-auto mb-8 md:mb-12">
-        <p className="font-mono text-[16px] font-semibold tracking-[0.3em] text-champagne uppercase mb-6">The Archive</p>
+        <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-4 md:mb-6">The Archive</p>
         <div className="flex flex-col gap-8">
           <div>
             <h1 className="font-serif text-[clamp(1.5rem,2.5vw,3.5rem)] font-medium leading-[1.05] md:whitespace-nowrap">

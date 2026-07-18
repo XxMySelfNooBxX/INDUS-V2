@@ -25,12 +25,15 @@ export default function HeroCanvas() {
         if (this.y < -10) { this.x = Math.random() * canvas!.width; this.y = canvas!.height + 10; }
       }
       draw() {
+        ctx!.save();
         ctx!.beginPath(); ctx!.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx!.fillStyle = `rgba(212, 175, 55, ${this.opacity})`;
         ctx!.shadowBlur = 8; ctx!.shadowColor = "rgba(212, 175, 55, 0.6)"; ctx!.fill();
+        ctx!.restore();
       }
     }
-    for (let i = 0; i < 200; i++) particles.push(new Particle());
+    // Reduced from 200 → 120 for better performance on lower-end devices
+    for (let i = 0; i < 120; i++) particles.push(new Particle());
     const animate = () => {
       ctx!.clearRect(0, 0, canvas!.width, canvas!.height);
       particles.forEach(p => { p.update(); p.draw(); });

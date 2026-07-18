@@ -3,6 +3,7 @@
 import Link from "next/link";
 import HeroCanvas from "@/components/HeroCanvas";
 import { useEffect, useState } from "react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export default function Home() {
   const [isFirstLoad, setIsFirstLoad] = useState(true);
@@ -14,6 +15,15 @@ export default function Home() {
       sessionStorage.setItem("hasVisitedHome", "true");
     }
   }, []);
+
+  // Scroll reveal refs
+  const intro = useScrollReveal({ threshold: 0.1 });
+  const introRight = useScrollReveal({ threshold: 0.1, rootMargin: "0px 0px -80px 0px" });
+  const divisionsHeader = useScrollReveal({ threshold: 0.2 });
+  const card1 = useScrollReveal({ threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+  const card2 = useScrollReveal({ threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+  const card3 = useScrollReveal({ threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
+  const card4 = useScrollReveal({ threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
 
   return (
     <main className="relative min-h-screen">
@@ -47,7 +57,10 @@ export default function Home() {
       {/* Introduction Section */}
       <section className="py-32 px-6 md:px-12 relative z-10 border-t border-alabaster/10">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-16 items-center">
-          <div className="flex-1">
+          <div
+            ref={intro.ref}
+            className={`flex-1 transition-all duration-700 ${intro.isVisible ? "reveal-visible" : "reveal-hidden"}`}
+          >
             <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-4 md:mb-6">Who We Are</p>
             <h2 className="font-serif text-[clamp(2rem,4vw,3.5rem)] font-medium leading-[1.1] mb-8">
               Business Technologists <br />
@@ -67,7 +80,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex-1">
+          <div
+            ref={introRight.ref}
+            className={`flex-1 transition-all duration-700 delay-150 ${introRight.isVisible ? "reveal-visible" : "reveal-hidden"}`}
+          >
             <div className="aspect-[4/5] border border-champagne/20 bg-obsidian p-8 flex flex-col justify-end relative overflow-hidden group">
               <div className="absolute inset-0 opacity-30 bg-[url('/images/home/home.jpeg')] bg-cover bg-center grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000"></div>
               <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/80 to-transparent z-10 pointer-events-none"></div>
@@ -86,7 +102,10 @@ export default function Home() {
       {/* Divisions Section */}
       <section className="py-32 px-6 md:px-12 relative z-10 border-t border-alabaster/10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-20">
+          <div
+            ref={divisionsHeader.ref}
+            className={`text-center mb-20 transition-all duration-700 ${divisionsHeader.isVisible ? "reveal-visible" : "reveal-hidden"}`}
+          >
             <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-4 md:mb-6">Our Expertise</p>
             <h2 className="font-serif text-[clamp(2.5rem,5vw,4rem)] font-medium leading-[1.05]">
               Multi Division, <br /><span className="text-champagne italic">One Standard of Excellence.</span>
@@ -95,7 +114,11 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Commodities */}
-            <div className="border border-alabaster/10 hover:border-champagne/40 transition-colors duration-500 p-12 group bg-obsidian-2/30">
+            <div
+              ref={card1.ref}
+              className={`border border-alabaster/10 hover:border-champagne/40 transition-all duration-500 p-12 group bg-obsidian-2/30 ${card1.isVisible ? "reveal-visible" : "reveal-hidden"}`}
+              style={{ transitionDelay: "0ms" }}
+            >
               <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-6 md:mb-8">The Archive</p>
               <h3 className="font-serif text-3xl mb-6">Agricultural Commodities</h3>
               <p className="font-sans text-alabaster/80 leading-relaxed mb-12">
@@ -107,7 +130,11 @@ export default function Home() {
             </div>
 
             {/* Infrastructure */}
-            <div className="border border-alabaster/10 hover:border-champagne/40 transition-colors duration-500 p-12 group bg-obsidian-2/30">
+            <div
+              ref={card2.ref}
+              className={`border border-alabaster/10 hover:border-champagne/40 transition-all duration-500 p-12 group bg-obsidian-2/30 ${card2.isVisible ? "reveal-visible" : "reveal-hidden"}`}
+              style={{ transitionDelay: "100ms" }}
+            >
               <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-6 md:mb-8">Capabilities</p>
               <h3 className="font-serif text-3xl mb-6">Civil Infrastructure</h3>
               <p className="font-sans text-alabaster/80 leading-relaxed mb-12">
@@ -119,7 +146,11 @@ export default function Home() {
             </div>
 
             {/* Agriculture Equipment */}
-            <div className="border border-alabaster/10 hover:border-champagne/40 transition-colors duration-500 p-12 group bg-obsidian-2/30">
+            <div
+              ref={card3.ref}
+              className={`border border-alabaster/10 hover:border-champagne/40 transition-all duration-500 p-12 group bg-obsidian-2/30 ${card3.isVisible ? "reveal-visible" : "reveal-hidden"}`}
+              style={{ transitionDelay: "200ms" }}
+            >
               <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-6 md:mb-8">Machinery</p>
               <h3 className="font-serif text-3xl mb-6">Agriculture Equipment</h3>
               <p className="font-sans text-alabaster/80 leading-relaxed mb-12">
@@ -131,7 +162,11 @@ export default function Home() {
             </div>
 
             {/* Consultancy Services */}
-            <div className="border border-alabaster/10 hover:border-champagne/40 transition-colors duration-500 p-12 group bg-obsidian-2/30">
+            <div
+              ref={card4.ref}
+              className={`border border-alabaster/10 hover:border-champagne/40 transition-all duration-500 p-12 group bg-obsidian-2/30 ${card4.isVisible ? "reveal-visible" : "reveal-hidden"}`}
+              style={{ transitionDelay: "300ms" }}
+            >
               <p className="font-mono text-sm sm:text-base md:text-lg font-semibold tracking-[0.2em] md:tracking-[0.3em] text-champagne uppercase mb-6 md:mb-8">Advisory</p>
               <h3 className="font-serif text-3xl mb-6">Consultancy Services</h3>
               <p className="font-sans text-alabaster/80 leading-relaxed mb-12">
@@ -147,3 +182,4 @@ export default function Home() {
     </main>
   );
 }
+
